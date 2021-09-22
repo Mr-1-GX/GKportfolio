@@ -1,0 +1,68 @@
+//header-Background
+%head-back {
+    background: linear-gradient(#4A235A,#154360);
+    min-height: 100vh;
+}
+%head-img {
+    background-image: url(/img/backgr-img/man.png);
+    background-color: #4A235A;
+    @include back-img (bottom,no-repeat,fixed,10% 0%,0.9);
+}
+%a-hower {
+    &:hover {
+        border-bottom: 5px solid #ffffff;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        transform: translateY(100px);
+        background: linear-gradient(to top,#154360,transparent);
+    }
+}
+%sect-bifor {
+    &:before {
+        content: ' ';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70%;
+        background: linear-gradient(to top,#154360,transparent);
+        z-index: 100;
+    }
+}
+%sect-after {
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 10%;
+        background: linear-gradient(to bottom,#154360,transparent);
+        z-index: 100;
+    }
+}
+%active {
+    border-bottom: 5px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+}
+%anime {
+    @include  anime (gk,2s,linear,10s,2,normal,both,running);
+}
+%border {
+    @include border (2px,solid,white,3px);
+    box-shadow: 5px 10px 10px #4A235A;
+}
+%bord-btn {
+    border-bottom: 7px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+%btn {
+    position: absolute;
+    top: 280px;
+    height: 10%;
+    font-size: 4.0em;
+    padding: 15px 20px;
+    color: white;
+    transform: translateY(100px);
+}

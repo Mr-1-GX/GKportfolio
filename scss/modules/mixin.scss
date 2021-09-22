@@ -1,0 +1,21 @@
+@mixin d-flex ($dysplai,$justyfi,$alig) {
+    display: $dysplai;
+    justify-content: $justyfi;
+    align-items: $alig;
+}
+@mixin back-img ($positi,$repeat,$attach,$size,$opa) {
+    background-position: $positi;
+    background-repeat: $repeat;
+    background-attachment: $attach;  
+    background-size: $size;
+    opacity: $opa;
+}
+@mixin border ($width,$type,$color,$rad) {
+    border-width:$width;
+    border-style: $type;
+    border-color: $color;
+    border-radius: $rad;
+}
+@mixin  anime ($name,$duration,$timing-function,$delay,$iteration-count,$direction,$fill-mode,$play-state) {
+    animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode $play-state;  
+}
